@@ -1,5 +1,26 @@
-input{
-    width: 40px;
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;  
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.visuel {
+    width: 100%;
+    height: 40%;
+    background:url("../images/bg_street.png") ;
+    
+    display: flex;  
+    justify-content: center;
+    align-items: center;
 }
 
 .invisible{
@@ -10,4 +31,238 @@ input{
 .visible{
     color: black;
     display: inline;
+}
+
+#visuelcaseMario {
+    width: 10%;
+    height: 100%;
+    background:url("../images/d9zi3cq-4a9df83b-9a4a-43d6-b6d0-c79fe0956d1f-removebg-preview.png")  no-repeat  ;
+    background-size: 100%;
+    background-position-y: 100%;
+    position: relative;   
+    display: flex; 
+    justify-self: flex-start ;
+    transform: translateX(-300%)
+}
+
+
+#visuelcaseVirus {
+    width: 10%;
+    height: 100%;
+    background: url("../images/virus_2-removebg-preview.png") no-repeat ;
+    background-size: 75%;
+    position: relative;
+    background-position-y: 100%;
+    transform: translateX(350%);
+}
+
+#visuelcaseVirusAnime {
+    width: 10%;
+    height: 100%;
+    background: url("../images/virus_2-removebg-preview.png") no-repeat ;
+    background-size: 75%;
+    position: relative;
+    background-position-y: 100%;
+    transform: translateX(350%);
+    animation: virus 1s infinite
+}
+
+#pilulle {
+    height: 40px;
+    width: 37px;
+    background:url("../images/pilule-removebg-preview.png") no-repeat ;
+    position: relative;
+   background-size: 100%;
+   transform: translateX(-1300%);
+  background-position-y: 100%;
+  margin-top: 7%;
+}
+
+.pilulleAnime {
+    height: 40px;
+    width: 37px;
+    background:url("../images/pilule-removebg-preview.png") no-repeat ;
+    position: relative;
+   background-size: 100%;
+   transform: translateX(-1300%);
+  background-position-y: 100%;
+  margin-top: 7%;
+  animation: pillule6 3s infinite
+}
+
+@keyframes pillule7 {
+    0% {
+
+    }
+    100% {
+        transform: translateX(1800%) rotateZ(1920deg)
+    } 
+}
+
+@keyframes pillule6 {
+    0% {
+
+    }
+    100% {
+        transform: translateX(1300%) rotateZ(1920deg)
+    } 
+}
+
+@keyframes pillule5 {
+    0% {
+
+    }
+    100% {
+        transform: translateX(800%) rotateZ(1920deg)
+    } 
+}
+
+@keyframes pillule4 {
+    0% {
+
+    }
+    100% {
+        transform: translateX(300%) rotateZ(1920deg)
+    } 
+}
+
+
+@keyframes virus {
+    0% {
+    }
+    100% {
+        transform: translateX(275%)
+    }
+}
+
+.life{
+    width: 15%;
+    height: 90%;
+    background: #313131;
+    display: flex;
+    
+    
+}
+.heart {
+    width: 60%;
+    height: 100%;
+    background: url("https://opengameart.org/sites/default/files/heart%20pixel%20art%20254x254.png") no-repeat;
+    background-size: 50%;
+    background-position-y: 50%;
+    background-position-x: 50%;
+    
+    
+}
+
+
+
+.word {
+    width: 60%;
+    height: 90%;
+    background: ivory;
+    ;
+}
+
+.boxButton {
+    width: 100%;
+    height: 40%;
+    background: url("../images/bg_terrain_3.png");
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reset {
+    width: 10%;
+    height: 15%;
+    background: black;
+    justify-self: flex-end;
+    margin-left: 80%;
+    margin-top: 3%; 
+}
+
+.boxLife {
+    width: 100%;
+    height: 10%;
+    background: #313131;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boxWord {
+    width: 100%;
+    height: 10%;
+    background: url("../images/bg_terrain_middle.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 75px;
+    height: 75px;
+    border-radius: 10%;
+    font-size: 3em;
+    background: #313131;
+    box-shadow: 100px ;
+    color: ivory;
+}
+
+#buttonReset {
+    margin-left: 15%;
+    width: 15%;
+}
+
+input {
+    width: 20%;
+    display: flex;
+    font-size: 4em;
+    align-items: center;
+    color: ivory;
+   background: #313131;
+}
+
+.egal {
+    width: 20%;
+    align-items: center;
+    font-size: 3em;
+    display: flex;
+    font-weight: bold;
+    color: ivory;
+}
+
+@media screen and (max-width: 768px) {
+    button {
+        width: 30px;
+    height: 30px;
+    }
+    #buttonReset {
+        width: 40px;
+        margin-left: 15%;
+    }
+    .life {
+        width: 30%;
+        height: 30%;
+    }
+    #visuelcaseVirus {
+        background-size: 110%;
+    }
+    button {
+        font-size: 1em;
+    }
+    #buttonReset {
+        width: 15%;
+    }
+    .heart {
+        background-size: 30%;
+    }
+    input {
+        font-size: 1em;
+    }
+    .egal{
+        font-size :1.5em;
+        font-weight: bold;
+    }
 }
